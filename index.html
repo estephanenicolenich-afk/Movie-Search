@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🎬 Movie Search</h1>
+            <p>Search for movies using the OMDb API</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>Find a Movie</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter movie title..."
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+            </div>
+
+            <p id="status"></p>
+
+        </section>
+
+
+        <!-- Search Results -->
+        <section>
+
+            <h2 id="resultsTitle"></h2>
+
+            <div id="movieResults" class="movie-grid"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-button">
+                &times;
+            </button>
+
+            <div id="movieDetails"></div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>
+            Movie Search Website | Powered by OMDb API
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
